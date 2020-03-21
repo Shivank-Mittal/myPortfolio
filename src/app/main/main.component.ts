@@ -19,19 +19,25 @@ export class MainComponent implements OnInit {
 
   switch(url){
     case icons.Email :
-      console.log(icons.Email);
+      const selBox = document.createElement('textarea');
+      selBox.value = "mittal.shivank@gmail.com";
+      document.body.appendChild(selBox);
+      selBox.focus();
+      selBox.select();
+      document.execCommand('copy');
+      document.body.removeChild(selBox);
       break;
     case icons.Linkedin :
-      console.log(icons.Linkedin);
+      window.open("https://www.linkedin.com/in/shivank-mittal-09055ba3");
       break;
     case icons.github :
       window.open("https://github.com/Shivank-Mittal");
       break;
     case icons.facebook :
-      console.log(icons.Linkedin);
+      window.open("https://www.facebook.com/shivank.mittal.7");
       break;
     case icons.instagram :
-      console.log(icons.Linkedin);
+      window.open("https://www.instagram.com/shivank.m/");
       break;   
       
     
