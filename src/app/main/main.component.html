@@ -1,0 +1,18 @@
+
+
+<mat-toolbar class="navBar" >
+    <div>
+        <span>Home</span>
+    </div>
+    <div>
+        <span>About</span>
+        <span>Experence</span>
+        <span>Education</span>
+        <span>Skills</span>  
+    </div>
+    <div  >
+        <span *ngFor="let icon of socialMediaAcountIcons">
+            <a (click) = "goToLink(icon)" href="#"> <mat-icon svgIcon={{icon}}></mat-icon></a>
+        </span>   
+    </div>
+</mat-toolbar>
