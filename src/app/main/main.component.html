@@ -5,10 +5,9 @@
         <span>Home</span>
     </div>
     <div>
-        <span>About</span>
-        <span>Experence</span>
-        <span>Education</span>
-        <span>Skills</span>  
+        <span *ngFor="let item of dasboardMenue">
+            <a   (click) = "toLoacation(item)" >{{item}}</a>
+        </span>  
     </div>
     <div  >
         <span *ngFor="let icon of socialMediaAcountIcons">

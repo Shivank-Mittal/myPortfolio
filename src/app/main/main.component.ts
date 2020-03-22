@@ -9,7 +9,8 @@ import { icons } from '../icons';
 export class MainComponent implements OnInit {
 
 
-  public socialMediaAcountIcons = [icons.Email, icons.Linkedin,icons.github , icons.facebook, icons.instagram];
+  public socialMediaAcountIcons = [icons.Email, icons.Linkedin, icons.github , icons.facebook, icons.instagram];
+  public dasboardMenue = ["About","Experence","Education", "Skills"];
   constructor() { }
 
   ngOnInit() {
@@ -17,7 +18,8 @@ export class MainComponent implements OnInit {
 
   public goToLink(url : string){
 
-  switch(url){
+  switch(url)
+  {
     case icons.Email :
       const selBox = document.createElement('textarea');
       selBox.value = "mittal.shivank@gmail.com";
@@ -38,10 +40,14 @@ export class MainComponent implements OnInit {
       break;
     case icons.instagram :
       window.open("https://www.instagram.com/shivank.m/");
-      break;   
-      
-    
+      break; }
   }
+
+  public toLoacation( item : string)
+  {
+    console.log(item + " clicked");
+    document.getElementById(item).scrollIntoView({behavior:"smooth"});
   }
+
 
 }

@@ -1,6 +1,7 @@
 
 .navBar {
   width: auto;
+  height: 7rem;
   background-color: black;
   color: white;
   justify-content: space-evenly;
@@ -8,7 +9,8 @@
 span {
   padding: 1rem;
 }
-a { color: inherit; } 
+a { color: inherit;
+  text-decoration: none; } 
 
 h1 {
     /* color: #999999; */
