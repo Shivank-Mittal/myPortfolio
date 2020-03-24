@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-main></app-main>\n\n<section id=\"Home\">\n    <mat-grid-list cols= \"2\"></mat-grid-list>\n    <div class = imgCss>\n        <img src=\"./assets/pictures/mypic3.jpg\" class=\"img-rounded\" alt=\"Cinque Terre\" />\n    </div>\n</section>\n\n<section id=\"About\">\n    <h1>About</h1>\n</section>\n<section id=\"Experence\"><h1>Experence</h1></section>\n<section id=\"Education\"><h1>Education</h1></section>\n<section id=\"Skills\"><h1>Skills</h1></section>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<section id=\"Home\"  >\n    \n    <div class =\"containerImge\" [style.clip-path]=\"_shape\"   (scroll)=\"onPicScroll($event)\"  >\n        <img src={{picture}} class=\"img-rounded\" alt=\"My Image\" />\n        \n        \n    </div>\n    <div class=\"bottom-left\"><h1>Shivank Mittal</h1></div> \n</section>\n\n\n<div class=\"navBarStyle\" [style.position]=\"_imagePosition\" (scroll)= \"onNavBarScroll($event)\" >\n    <app-main></app-main>\n</div>\n\n<section id=\"About\" >\n    <h1>About</h1>\n</section>\n<section id=\"Experence\"><h1>Experence</h1></section>\n<section id=\"Education\"><h1>Education</h1></section>\n<section id=\"Skills\"><h1>Skills</h1></section>\n\n<!-- <script type=\"text/javascript\">\n    var section = document.querySelector('containerImge');\n    window.addEventListener('scroll',function(){\n        var value = window.scrollY;\n        section.style.clipPath = \"circle(\" + value + \"% at 45% 40% )\" \n    })\n</script> -->\n");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n\n<mat-toolbar class=\"navBar\" >\n    <div>\n        <span>Home</span>\n    </div>\n    <div>\n        <span *ngFor=\"let item of dasboardMenue\">\n            <a   (click) = \"toLoacation(item)\" >{{item}}</a>\n        </span>  \n    </div>\n    <div  >\n        <span *ngFor=\"let icon of socialMediaAcountIcons\">\n            <a (click) = \"goToLink(icon)\" href=\"#\"> <mat-icon svgIcon={{icon}}></mat-icon></a>\n        </span>   \n    </div>\n</mat-toolbar>");
+/* harmony default export */ __webpack_exports__["default"] = ("\n\n<mat-toolbar class=\"navBar\" >\n    <div>\n        <span>Home</span>\n    </div>\n    <div>\n        <span *ngFor=\"let item of dasboardMenue\">\n            <a (click) = \"toLoacation(item)\" >{{item}}</a>\n        </span>  \n    </div>\n    <div  >\n        <span *ngFor=\"let icon of socialMediaAcountIcons\">\n            <a (click) = \"goToLink(icon)\" href=\"#\"> <mat-icon svgIcon={{icon}}></mat-icon></a>\n        </span>   \n    </div>\n</mat-toolbar>");
 
 /***/ }),
 
@@ -532,7 +532,7 @@ var icons;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("section {\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n\r\nimg {\r\n    \r\n    margin-top: 30px;\r\n    margin-right: 300px;\r\n    width: -webkit-fit-content;\r\n    width: -moz-fit-content;\r\n    width: fit-content;\r\n    float: right;\r\n    border-radius: 20px ;\r\n    width:10%\r\n  }\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaW5mby9pbmZvLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0lBQ1gsWUFBWTtBQUNoQjs7QUFFQTs7SUFFSSxnQkFBZ0I7SUFDaEIsbUJBQW1CO0lBQ25CLDBCQUFrQjtJQUFsQix1QkFBa0I7SUFBbEIsa0JBQWtCO0lBQ2xCLFlBQVk7SUFDWixvQkFBb0I7SUFDcEI7RUFDRiIsImZpbGUiOiJzcmMvYXBwL2luZm8vaW5mby5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsic2VjdGlvbiB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogMTAwJTtcclxufVxyXG5cclxuaW1nIHtcclxuICAgIFxyXG4gICAgbWFyZ2luLXRvcDogMzBweDtcclxuICAgIG1hcmdpbi1yaWdodDogMzAwcHg7XHJcbiAgICB3aWR0aDogZml0LWNvbnRlbnQ7XHJcbiAgICBmbG9hdDogcmlnaHQ7XHJcbiAgICBib3JkZXItcmFkaXVzOiAyMHB4IDtcclxuICAgIHdpZHRoOjEwJVxyXG4gIH1cclxuIl19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".navBarStyle{\r\n    padding-top: 400px;\r\n    position: -webkit-sticky; /* Safari */\r\n    width: 100%;\r\n    top: 0;\r\n}\r\n.sectionInfo {\r\n    position: fixed;\r\n    height: 100%;\r\n}\r\nsection {\r\n    position: relative;\r\n    height: 100%;\r\n}\r\n.containerImge {\r\n    position: fixed;\r\n    text-align: center;\r\n    color: black;\r\n    width: 100%;\r\n    height: 100%;\r\n  }\r\nimg {\r\n    padding-top:3px;\r\n    border-radius: 1px ;\r\n    background-size: cover;\r\n    width: 100%;\r\n  }\r\n/* Bottom left text */\r\n.bottom-left {\r\n    color: black;\r\n    position: absolute;\r\n    z-index: 1;\r\n    top: 250px;\r\n    left: 16px;\r\n    font-weight: 3em;\r\n    width: 100%;\r\n  }\r\n  \r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaW5mby9pbmZvLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7SUFDbEIsd0JBQXdCLEVBQUUsV0FBVztJQUNyQyxXQUFXO0lBQ1gsTUFBTTtBQUNWO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGVBQWU7SUFDZixrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLFdBQVc7SUFDWCxZQUFZO0VBQ2Q7QUFFRjtJQUNJLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsc0JBQXNCO0lBQ3RCLFdBQVc7RUFDYjtBQUVBLHFCQUFxQjtBQUN2QjtJQUNJLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsVUFBVTtJQUNWLFVBQVU7SUFDVixVQUFVO0lBQ1YsZ0JBQWdCO0lBQ2hCLFdBQVc7RUFDYiIsImZpbGUiOiJzcmMvYXBwL2luZm8vaW5mby5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5hdkJhclN0eWxle1xyXG4gICAgcGFkZGluZy10b3A6IDQwMHB4O1xyXG4gICAgcG9zaXRpb246IC13ZWJraXQtc3RpY2t5OyAvKiBTYWZhcmkgKi9cclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgdG9wOiAwO1xyXG59XHJcbi5zZWN0aW9uSW5mbyB7XHJcbiAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbn1cclxuc2VjdGlvbiB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbn1cclxuLmNvbnRhaW5lckltZ2Uge1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgfVxyXG5cclxuaW1nIHtcclxuICAgIHBhZGRpbmctdG9wOjNweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDFweCA7XHJcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG5cclxuICAvKiBCb3R0b20gbGVmdCB0ZXh0ICovXHJcbi5ib3R0b20tbGVmdCB7XHJcbiAgICBjb2xvcjogYmxhY2s7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB6LWluZGV4OiAxO1xyXG4gICAgdG9wOiAyNTBweDtcclxuICAgIGxlZnQ6IDE2cHg7XHJcbiAgICBmb250LXdlaWdodDogM2VtO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgfVxyXG4gIFxyXG5cclxuIl19 */");
 
 /***/ }),
 
@@ -548,13 +548,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InfoComponent", function() { return InfoComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+
 
 
 let InfoComponent = class InfoComponent {
-    constructor() { }
+    constructor(sanitizer) {
+        this.sanitizer = sanitizer;
+        this._shape = this.sanitizer.bypassSecurityTrustStyle("circle(250px at 45% 40% )");
+        this._imagePosition = "sticky";
+        this.picture = "./assets/pictures/webppPic.jpg";
+    }
+    onPicScroll(event) {
+        var value = window.scrollY + 250;
+        if (value > 250) {
+            this._shape = this.sanitizer.bypassSecurityTrustStyle("circle(" + value + "px at 45% 40%  )");
+        }
+    }
     ngOnInit() {
     }
 };
+InfoComponent.ctorParameters = () => [
+    { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('window:scroll', ['$event']) // for window scroll events
+], InfoComponent.prototype, "onPicScroll", null);
 InfoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-info',
@@ -576,7 +595,7 @@ InfoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n.navBar {\r\n  width: auto;\r\n  height: 7rem;\r\n  background-color: black;\r\n  color: white;\r\n  -webkit-box-pack: space-evenly;\r\n          justify-content: space-evenly;\r\n}\r\nspan {\r\n  padding: 1rem;\r\n}\r\na { color: inherit;\r\n  text-decoration: none; }\r\nh1 {\r\n    /* color: #999999; */\r\nfont-family:   'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;\r\nfont-size: 70px;\r\nfont-weight: bold;\r\n/* margin-top: 0px; */\r\n/* margin-bottom: 1px; */\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWFpbi9tYWluLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWix1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLDhCQUE2QjtVQUE3Qiw2QkFBNkI7QUFDL0I7QUFDQTtFQUNFLGFBQWE7QUFDZjtBQUNBLElBQUksY0FBYztFQUNoQixxQkFBcUIsRUFBRTtBQUV6QjtJQUNJLG9CQUFvQjtBQUN4QiwwRUFBMEU7QUFDMUUsZUFBZTtBQUNmLGlCQUFpQjtBQUNqQixxQkFBcUI7QUFDckIsd0JBQXdCO0VBQ3RCIiwiZmlsZSI6InNyYy9hcHAvbWFpbi9tYWluLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuLm5hdkJhciB7XHJcbiAgd2lkdGg6IGF1dG87XHJcbiAgaGVpZ2h0OiA3cmVtO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcclxufVxyXG5zcGFuIHtcclxuICBwYWRkaW5nOiAxcmVtO1xyXG59XHJcbmEgeyBjb2xvcjogaW5oZXJpdDtcclxuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7IH0gXHJcblxyXG5oMSB7XHJcbiAgICAvKiBjb2xvcjogIzk5OTk5OTsgKi9cclxuZm9udC1mYW1pbHk6ICAgJ0ZyYW5rbGluIEdvdGhpYyBNZWRpdW0nLCAnQXJpYWwgTmFycm93JywgQXJpYWwsIHNhbnMtc2VyaWY7XHJcbmZvbnQtc2l6ZTogNzBweDtcclxuZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbi8qIG1hcmdpbi10b3A6IDBweDsgKi9cclxuLyogbWFyZ2luLWJvdHRvbTogMXB4OyAqL1xyXG4gIH0iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n.navBar {\r\n  \r\n  /* position:  relative; */\r\n  width: 100%;\r\n  height: 7rem;\r\n  background-color: black;\r\n  color: white;\r\n  -webkit-box-pack: space-evenly;\r\n          justify-content: space-evenly;\r\n \r\n}\r\nspan {\r\n  padding: 1rem;\r\n}\r\na { color: inherit;\r\n  text-decoration: none; }\r\nh1 {\r\n    /* color: #999999; */\r\nfont-family:   'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;\r\nfont-size: 70px;\r\nfont-weight: bold;\r\n/* margin-top: 0px; */\r\n/* margin-bottom: 1px; */\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWFpbi9tYWluLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBOztFQUVFLHlCQUF5QjtFQUN6QixXQUFXO0VBQ1gsWUFBWTtFQUNaLHVCQUF1QjtFQUN2QixZQUFZO0VBQ1osOEJBQTZCO1VBQTdCLDZCQUE2Qjs7QUFFL0I7QUFDQTtFQUNFLGFBQWE7QUFDZjtBQUNBLElBQUksY0FBYztFQUNoQixxQkFBcUIsRUFBRTtBQUV6QjtJQUNJLG9CQUFvQjtBQUN4QiwwRUFBMEU7QUFDMUUsZUFBZTtBQUNmLGlCQUFpQjtBQUNqQixxQkFBcUI7QUFDckIsd0JBQXdCO0VBQ3RCIiwiZmlsZSI6InNyYy9hcHAvbWFpbi9tYWluLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuLm5hdkJhciB7XHJcbiAgXHJcbiAgLyogcG9zaXRpb246ICByZWxhdGl2ZTsgKi9cclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDdyZW07XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xyXG4gXHJcbn1cclxuc3BhbiB7XHJcbiAgcGFkZGluZzogMXJlbTtcclxufVxyXG5hIHsgY29sb3I6IGluaGVyaXQ7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lOyB9IFxyXG5cclxuaDEge1xyXG4gICAgLyogY29sb3I6ICM5OTk5OTk7ICovXHJcbmZvbnQtZmFtaWx5OiAgICdGcmFua2xpbiBHb3RoaWMgTWVkaXVtJywgJ0FyaWFsIE5hcnJvdycsIEFyaWFsLCBzYW5zLXNlcmlmO1xyXG5mb250LXNpemU6IDcwcHg7XHJcbmZvbnQtd2VpZ2h0OiBib2xkO1xyXG4vKiBtYXJnaW4tdG9wOiAwcHg7ICovXHJcbi8qIG1hcmdpbi1ib3R0b206IDFweDsgKi9cclxuICB9Il19 */");
 
 /***/ }),
 
@@ -629,7 +648,6 @@ let MainComponent = class MainComponent {
         }
     }
     toLoacation(item) {
-        console.log(item + " clicked");
         document.getElementById(item).scrollIntoView({ behavior: "smooth" });
     }
 };
