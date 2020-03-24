@@ -1,15 +1,30 @@
-<app-main></app-main>
 
-<section id="Home">
-    <div class = imgCss>
-        <img src="./assets/pictures/myPic.jpg" class="img-rounded" alt="Cinque Terre" />
+
+<section id="Home"  >
+    
+    <div class ="containerImge" [style.clip-path]="_shape"  (scroll)="onScroll($event)"  >
+        <img src={{picture}} class="img-rounded" alt="My Image" />
+        
+        <div class="bottom-left">Bottom Left</div>
     </div>
+    
+   
 </section>
+<div >
+    <app-main></app-main>
+</div>
 
-<section id="About">
+<section id="About" >
     <h1>About</h1>
 </section>
 <section id="Experence"><h1>Experence</h1></section>
 <section id="Education"><h1>Education</h1></section>
 <section id="Skills"><h1>Skills</h1></section>
 
+<!-- <script type="text/javascript">
+    var section = document.querySelector('containerImge');
+    window.addEventListener('scroll',function(){
+        var value = window.scrollY;
+        section.style.clipPath = "circle(" + value + "% at 45% 40% )" 
+    })
+</script> -->

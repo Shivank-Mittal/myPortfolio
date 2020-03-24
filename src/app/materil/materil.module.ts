@@ -4,7 +4,8 @@ import {
   MatSliderModule,
   MatSidenavModule,
   MatToolbarModule,
-  MatIconModule
+  MatIconModule,
+  MatGridListModule
 
 } from '@angular/material';
 
@@ -14,7 +15,8 @@ const Material =[
   MatSliderModule,
   MatSidenavModule,
   MatToolbarModule,
-  MatIconModule 
+  MatIconModule,
+  MatGridListModule 
 ]
 
 

@@ -45,7 +45,6 @@ export class MainComponent implements OnInit {
 
   public toLoacation( item : string)
   {
-    console.log(item + " clicked");
     document.getElementById(item).scrollIntoView({behavior:"smooth"});
   }
 

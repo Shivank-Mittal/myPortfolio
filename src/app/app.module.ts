@@ -14,7 +14,7 @@ import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent, 
     MainComponent,
     InfoComponent
   ],
