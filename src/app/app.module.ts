@@ -10,13 +10,15 @@ import { HttpClientModule} from '@angular/common/http'
 
 import { MaterilModule } from './materil/materil.module';
 import { InfoComponent } from './info/info.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
     AppComponent, 
     MainComponent,
-    InfoComponent
+    InfoComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

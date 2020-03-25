@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { icons } from '../icons';
+import { icons, socialAccounts } from '../icons';
 
 @Component({
   selector: 'app-main',
@@ -16,11 +16,12 @@ export class MainComponent implements OnInit {
   ngOnInit() {
   }
 
-  public goToLink(url : string){
+  public goToLink(clickedIcon : string){
 
-  switch(url)
-  {
-    case icons.Email :
+    if(clickedIcon != icons.Email){
+      window.open(socialAccounts[clickedIcon]);
+    }
+    else{
       const selBox = document.createElement('textarea');
       selBox.value = "mittal.shivank@gmail.com";
       document.body.appendChild(selBox);
@@ -28,23 +29,12 @@ export class MainComponent implements OnInit {
       selBox.select();
       document.execCommand('copy');
       document.body.removeChild(selBox);
-      break;
-    case icons.Linkedin :
-      window.open("https://www.linkedin.com/in/shivank-mittal-09055ba3");
-      break;
-    case icons.github :
-      window.open("https://github.com/Shivank-Mittal");
-      break;
-    case icons.facebook :
-      window.open("https://www.facebook.com/shivank.mittal.7");
-      break;
-    case icons.instagram :
-      window.open("https://www.instagram.com/shivank.m/");
-      break; }
-  }
 
+    }
+}
   public toLoacation( item : string)
   {
+    console.log(item)
     document.getElementById(item).scrollIntoView({behavior:"smooth"});
   }
 

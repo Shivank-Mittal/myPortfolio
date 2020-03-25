@@ -1,25 +1,27 @@
 
-
-<section id="Home"  >
-    
-    <div class ="containerImge" [style.clip-path]="_shape"  (scroll)="onScroll($event)"  >
-        <img src={{picture}} class="img-rounded" alt="My Image" />
-        
-        <div class="bottom-left">Bottom Left</div>
-    </div>
-    
-   
-</section>
-<div >
+<div class="navBarStyle"    >
     <app-main></app-main>
-</div>
+</div>  
+<section id="Home" class="sectionInfo"  >
+    
+    <div class ="containerImge" [style.clip-path]="_shape"   (scroll)="onPicScroll(img)"  >
+       
+        <img src={{picture}} class="img-rounded" alt="My Image" />
 
-<section id="About" >
-    <h1>About</h1>
+        
+    </div>
+    <div ><h1 class="name">{{_name}}</h1></div> 
 </section>
-<section id="Experence"><h1>Experence</h1></section>
-<section id="Education"><h1>Education</h1></section>
-<section id="Skills"><h1>Skills</h1></section>
+
+
+
+<section id="About" class="sectionScroll"  style="text-align: center; width: 100%;">
+    <app-about></app-about>
+</section>
+<section id="Experence" class="secondScroll"><h1>Experence</h1>
+</section>
+<section id="Education" class="secondScroll"><h1>Education</h1></section>
+<section id="Skills" class="secondScroll"><h1>Skills</h1></section>
 
 <!-- <script type="text/javascript">
     var section = document.querySelector('containerImge');

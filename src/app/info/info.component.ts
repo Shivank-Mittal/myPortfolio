@@ -8,21 +8,24 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class InfoComponent implements OnInit {
 
-  _shape= this.sanitizer.bypassSecurityTrustStyle("circle(250px at 45% 40% )");
-   
+  _name = "Shivank Mittal"; 
+  _shape= this.sanitizer.bypassSecurityTrustStyle("circle(200px at 45% 40% )");
+  _imagePosition = "relative";  
   public picture = "./assets/pictures/webppPic.jpg";
 
   
   constructor(private sanitizer: DomSanitizer) { }
+  
 
   @HostListener('window:scroll', ['$event']) // for window scroll events
-  onScroll(event) {
-    var value  = window.scrollY +250;
-    if( value !> 205){
-    
-    this._shape =this.sanitizer.bypassSecurityTrustStyle("circle("+value + "px at 45% 40%  )");
+  onPicScroll(ElementType) {
+    var value  = window.scrollY+200 ;
+    if( value !> 200){
+      this._shape = this.sanitizer.
+      bypassSecurityTrustStyle("circle("+value + "px at 45% 40%  )");
     }
   }
+
   ngOnInit() {
     
   }

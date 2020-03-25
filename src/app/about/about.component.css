@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.box
+{
+    position: absolute;
+    top:30%;
+    left: 10%;
+    transform:  translate(0%,0% ) rotateY(-30deg) skew(+5deg);
+    width: 500px;
+    height: 400px;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    transition: 0.5s;
+}
+
+.box:hover{
+    transform:  translate(0%,0%)  ;
+}
+.box:before
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-top: 20px solid gray;
+    border-left: 20px solid gray;
+    box-sizing: border-box;
+}
+
+.box:after
+{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-bottom: 20px solid gray;
+    border-right: 20px solid gray;
+    box-sizing: border-box;
+}
+.box .text
+{
+    position:  absolute;
+    top: 30px ;
+    left: -30px;
+    background: #262626;
+    width: calc(100% + 60px);
+    height: calc(100% - 60px);
+    transition: 0.4s;
+    transform: rotateY(30deg) skew(+5deg)
+
+}
+.box:hover .text 
+{
+    transform: rotateY(0deg) ;
+}
+
+.text div
+{
+    position: absolute;
+    /* top: 50%; */
+    left: 0;
+    width: 100%;
+    /* transform: translate(-50% ); */
+    padding: 40px 80px;
+    box-sizing: border-box;
+    text-align:  center;
+    z-index: 3;
+}
+
+.text div h1
+{
+    margin: 0 0 20px;
+    padding: 0 ;
+    color: #fff;
+}
+
+.text div p
+{
+    margin: 0 0 20px;
+    padding: 0 ;
+    color: #fff;
+    font-size: 18px;
+}
+

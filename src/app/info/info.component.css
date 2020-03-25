@@ -1,35 +1,75 @@
+h1{
+    font-family: "Tangerine", serif;
+}
+h1.name{
+    font-family: "Tangerine", serif;
+    letter-spacing: 2px;
+    font-size:120px;
+    color: black;
+    position: absolute;
+    z-index: 100;
+    top: 250px;
+    left: 16px;
+}
 
-.sectionInfo {
+h1.about{
+    font-family: "Tangerine", serif;
+    letter-spacing: 2px;
+    font-size:90px;
+    color: black;
+    position: absolute;
+    z-index: 100;
+    top : 10px;
+    text-align: center;
+}
+
+.navBarStyle{
+    /* padding-top: 400px; */
+     
     position: fixed;
-    width: fit-content;
-    height: 100%;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
 }
 section {
     position: relative;
-    width: fit-content;
+    /* margin-top: 10%; */
     height: 100%;
 }
+
+section.sectionInfo {
+    
+     position: fixed;
+     top: 0px;
+    height: 100%;
+}
+
+section.sectionScroll {
+    padding-top: 2rem;
+    padding-top: 5;
+    border : 2px black;
+    margin-top: 90%;
+    height: 100%;
+    background-color: #fff;
+}
+section.secondScroll{
+    margin-top: 25%;
+    background-color: blanchedalmond;
+}
 .containerImge {
-    position: fixed;
     text-align: center;
-    color: white;
+    color: black;
     width: 100%;
     height: 100%;
-
-    
   }
 
-img { 
+img {
+    padding-top:3px;
     border-radius: 1px ;
     background-size: cover;
     width: 100%;
   }
 
-  /* Bottom left text */
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
+
   
 
