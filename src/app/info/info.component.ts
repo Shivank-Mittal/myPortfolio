@@ -9,7 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class InfoComponent implements OnInit {
 
   _name = "Shivank Mittal"; 
-  _shape= this.sanitizer.bypassSecurityTrustStyle("circle(200px at 45% 40% )");
+  _shape= this.sanitizer.bypassSecurityTrustStyle("circle(100px at 43% 40% )");
   _imagePosition = "relative";  
   public picture = "./assets/pictures/webppPic.jpg";
 
@@ -19,10 +19,10 @@ export class InfoComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event']) // for window scroll events
   onPicScroll(ElementType) {
-    var value  = window.scrollY+200 ;
-    if( value !> 200){
+    var value  = window.scrollY+100 ;
+    if( value !> 100){
       this._shape = this.sanitizer.
-      bypassSecurityTrustStyle("circle("+value + "px at 45% 40%  )");
+      bypassSecurityTrustStyle("circle("+value + "px at 43% 40%  )");
     }
   }
 

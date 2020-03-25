@@ -9,7 +9,7 @@ h1.name{
     position: absolute;
     z-index: 100;
     top: 250px;
-    left: 16px;
+    right: 10%;
 }
 
 h1.about{
@@ -65,11 +65,71 @@ section.secondScroll{
 
 img {
     padding-top:3px;
-    border-radius: 1px ;
+    border-radius: 1px ; 
     background-size: cover;
     width: 100%;
   }
 
+.scrollDown
+{
+    position: relative;
+    bottom: 70px;
+    left: 45%;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg); 
+}
+.scrollDown span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    animation:  animate 1.5s linear infinite;
+    opacity: 0;
+}
+.scrollDown span:nth-child(1)
+{
+    transform: translate(-15px,-15px);
+    animation-delay: -0.4s;
+}
+.scrollDown span:nth-child(2)
+{
+    transform: translate(0px,0px);
+    animation-delay: -0.2s;
+}
+.scrollDown span:nth-child(3)
+{
+    transform: translate(15px,15px);
+    animation-delay: 0s;
+}
 
+@keyframes animate
+{
+    0%
+    {
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+
+    25%
+    {
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+
+    100%
+    {
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+    }
+}
   
 
