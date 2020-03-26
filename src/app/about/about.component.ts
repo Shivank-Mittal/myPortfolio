@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  _MyInfotmation= " I am a Software Developer living in Paris. A coding lover and game freek. Either backend or frontend, Both are very exiting to me. ";
   constructor() { }
+
 
   ngOnInit() {
   }

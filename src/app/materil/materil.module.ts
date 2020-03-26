@@ -5,7 +5,7 @@ import {
   MatSidenavModule,
   MatToolbarModule,
   MatIconModule,
-  MatGridListModule
+  MatGridListModule,
 
 } from '@angular/material';
 

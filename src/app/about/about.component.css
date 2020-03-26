@@ -90,3 +90,80 @@ body{
     font-size: 18px;
 }
 
+.skillContainer
+{
+    
+    min-height: 10vh;
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    top:20%;
+    right:10%;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column; 
+}
+.skillContainer h1
+{
+    font-size: 50px;
+    
+    
+}
+.skillContainer a
+{
+    position: relative;
+    width: 300px;
+    height: 75px;
+    margin:  10px 0;
+    font-size: 24px;
+    display: inline-flex;
+    align-items:  center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ;
+}
+
+.skillContainer a:hover
+{
+    color: #fff;
+}
+
+.skillContainer a:before
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 0;
+    height: 100%;
+    background: url("../../assets/buttons/btn-red.png");
+    background-size: cover;
+    transform-origin: left ;
+    transition: 0.5s;
+}
+
+.skillContainer a:nth-child(2):before
+{
+    background: url("../../assets/buttons/btn-blue.png");
+    background-size: cover;
+}
+
+.skillContainer a:hover:before
+{
+    width: 100%;
+}
+.skillContainer a span 
+{
+    position: relative;
+    z-index: 1;
+
+}
+
+
+
+md-grid-tile 
+{
+    text-decoration: none;
+    
+}
