@@ -10,7 +10,7 @@ export class MainComponent implements OnInit {
 
 
   public socialMediaAcountIcons = [icons.Email, icons.Linkedin, icons.github , icons.facebook, icons.instagram];
-  public dasboardMenue = ["About","Experence","Education", "Skills"];
+  public dasboardMenue = ["ABOUT","WORK","CONTACT"];
   constructor() { }
 
   ngOnInit() {

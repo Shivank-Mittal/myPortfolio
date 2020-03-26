@@ -4,11 +4,11 @@ h1{
 h1.name{
     font-family: "Tangerine", serif;
     letter-spacing: 2px;
-    font-size:120px;
+    font-size:100px;
     color: black;
     position: absolute;
     z-index: 100;
-    top: 250px;
+    top: 180px;
     right: 10%;
 }
 

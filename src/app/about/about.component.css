@@ -6,10 +6,10 @@ body{
 {
     position: absolute;
     top:30%;
-    left: 10%;
+    left: 7%;
     transform:  translate(0%,0% ) rotateY(-30deg) skew(+5deg);
-    width: 500px;
-    height: 400px;
+    width: 25%;
+    height: 50%;
     transform-style: preserve-3d;
     perspective: 2000px;
     transition: 0.5s;
@@ -48,8 +48,8 @@ body{
 .box .text
 {
     position:  absolute;
-    top: 30px ;
-    left: -30px;
+    top: 7% ;
+    left: -7%;
     background: #262626;
     width: calc(100% + 60px);
     height: calc(100% - 60px);
@@ -69,7 +69,7 @@ body{
     left: 0;
     width: 100%;
     /* transform: translate(-50% ); */
-    padding: 40px 80px;
+    padding: 40px 40px;
     box-sizing: border-box;
     text-align:  center;
     z-index: 3;
@@ -77,45 +77,43 @@ body{
 
 .text div h1
 {
-    margin: 0 0 20px;
+    margin: 0 0 6%;
     padding: 0 ;
     color: #fff;
 }
 
 .text div p
 {
-    margin: 0 0 20px;
+    margin: 0 0 7%;
     padding: 0 ;
     color: #fff;
-    font-size: 18px;
+    font-size: 90%;
 }
 
 .skillContainer
 {
-    
+    font-size: 0.8rem;
     min-height: 10vh;
     width: fit-content;
     display: flex;
     position: absolute;
     top:20%;
-    right:10%;
+    right:5%;
     justify-content: center;
     align-items:  center;
     flex-direction: column; 
 }
 .skillContainer h1
 {
-    font-size: 50px;
-    
-    
+    font-size: 300%;
 }
 .skillContainer a
 {
     position: relative;
-    width: 300px;
-    height: 75px;
-    margin:  10px 0;
-    font-size: 24px;
+    width: 12em;
+    height: 3.5em;
+    margin:  2% 0;
+    font-size: 150%;
     display: inline-flex;
     align-items:  center;
     justify-content: center;
@@ -158,12 +156,4 @@ body{
     position: relative;
     z-index: 1;
 
-}
-
-
-
-md-grid-tile 
-{
-    text-decoration: none;
-    
 }
