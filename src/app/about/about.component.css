@@ -7,7 +7,7 @@ body{
     position: absolute;
     top:30%;
     left: 7%;
-    transform:  translate(0%,0% ) rotateY(-30deg) skew(+5deg);
+    transform:  translate(0%,0% ) rotateY(-25deg) skew(+5deg);
     width: 25%;
     height: 50%;
     transform-style: preserve-3d;
@@ -69,9 +69,9 @@ body{
     left: 0;
     width: 100%;
     /* transform: translate(-50% ); */
-    padding: 40px 40px;
+    padding: 40px 60px;
     box-sizing: border-box;
-    text-align:  center;
+    text-align:  left;
     z-index: 3;
 }
 

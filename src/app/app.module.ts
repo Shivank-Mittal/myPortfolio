@@ -11,6 +11,7 @@ import { HttpClientModule} from '@angular/common/http'
 import { MaterilModule } from './materil/materil.module';
 import { InfoComponent } from './info/info.component';
 import { AboutComponent } from './about/about.component';
+import { WorkComponent } from './work/work.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AboutComponent } from './about/about.component';
     AppComponent, 
     MainComponent,
     InfoComponent,
-    AboutComponent
+    AboutComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,

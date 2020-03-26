@@ -45,8 +45,6 @@ section.sectionInfo {
 }
 
 section.sectionScroll {
-    padding-top: 2rem;
-    padding-top: 5;
     border : 2px black;
     margin-top: 90%;
     height: 100%;
@@ -54,7 +52,13 @@ section.sectionScroll {
 }
 section.secondScroll{
     margin-top: 25%;
-    background-color: blanchedalmond;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: consolas;
+    background-color: #fff;
 }
 .containerImge {
     text-align: center;
