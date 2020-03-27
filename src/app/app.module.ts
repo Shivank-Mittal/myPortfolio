@@ -12,6 +12,7 @@ import { MaterilModule } from './materil/materil.module';
 import { InfoComponent } from './info/info.component';
 import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { WorkComponent } from './work/work.component';
     MainComponent,
     InfoComponent,
     AboutComponent,
-    WorkComponent
+    WorkComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
