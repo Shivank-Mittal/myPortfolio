@@ -1,3 +1,22 @@
+#main{
+   
+    vertical-align: middle;
+    width:100%;
+    text-align: center;
+}
+
+#main section {
+    border: 2px black solid;
+    background-size: cover;
+    height:100vh;
+    width:100vw;
+    display: table;
+}
+#main section div.sec {
+    vertical-align: middle;
+    text-align: center;
+}
+
 h1{
     font-family: "Tangerine", serif;
 }
@@ -6,7 +25,7 @@ h1.name{
     letter-spacing: 2px;
     font-size:100px;
     color: black;
-    position: absolute;
+    /* position: absolute; */
     z-index: 100;
     top: 180px;
     right: 10%;
@@ -17,63 +36,11 @@ h1.about{
     letter-spacing: 2px;
     font-size:90px;
     color: black;
-    position: absolute;
+    /* position: absolute; */
     z-index: 100;
     top : 10px;
     text-align: center;
 }
-
-.navBarStyle{
-    /* padding-top: 400px; */
-     
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 100;
-}
-section {
-    position: relative;
-    /* margin-top: 10%; */
-    height: 100%;
-}
-
-section.sectionInfo {
-    
-     /* position: fixed; */
-     top: 0px;
-    height: 100%;
-}
-
-section.sectionScroll {
-    border : 2px black;
-    /* margin-top: 90%; */
-    height: 100%;
-    background-color: #fff;
-}
-section.secondScroll{
-    /* border: black solid 2px; */
-    margin-top: 25%;
-    padding: 0;
-    width: 100%;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* font-family: consolas; */
-    background-color: #fff;
-}
-.containerImge {
-    text-align: center;
-    color: black;
-    width: 1024 px;
-    height: 768 px;
-  }
-
-img {
-    padding-top:3px;
-    border-radius: 1px ; 
-    background-size: cover;
-    width: 1300px;
-  }
 
 .scrollDown
 {

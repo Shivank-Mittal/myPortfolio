@@ -1,11 +1,11 @@
-body{
-    margin: 0;
-    padding: 0;
+div.body{
+
+margin: 10%;
+align-items: center;
 }
 .box
 {
     position: absolute;
-    top:30%;
     left: 7%;
     transform:  translate(0%,0% ) rotateY(-25deg) skew(+5deg);
     width: 25%;
@@ -97,7 +97,6 @@ body{
     width: fit-content;
     display: flex;
     position: absolute;
-    top:20%;
     right:5%;
     justify-content: center;
     align-items:  center;
@@ -153,7 +152,7 @@ body{
 }
 .skillContainer a span 
 {
-    position: relative;
-    z-index: 1;
+    /* position: relative; */
+    z-index: 10;
 
 }

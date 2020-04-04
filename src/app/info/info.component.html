@@ -1,36 +1,45 @@
 
-<div class="navBarStyle"    >
-    <app-main></app-main>
-</div>  
-<section id="HOME" class="sectionInfo"  >
-    
-    <div class ="containerImge" [style.clip-path]="_shape"   (scroll)="onPicScroll(img)"  >
-       
-        <img src={{picture}} class="img-rounded" alt="My Image" />
+<div id="main">
+    <section id="HOME"  >
+        <div class = "sec">
 
+            
+        <div id="bg"></div>
+        <div class = "scrollDown">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        </div>
         
-    </div>
-    <div ><h1 class="name">{{_name}}</h1></div> 
+        <div class ="containerImge"   >
+            <img src={{picture}} class="img-rounded" alt="My Image"  style="width: 1000px;"/> 
+            
+        </div>
 
-    <div class = "scrollDown">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</section>
+    </section>
+    <script type="text/javascript">
+        var bg = document.getElementById("bg");
+        window.onmouseover = function(e){
+            bg.style.width = e.clientX + 'px';
+        }
+    </script>
 
 
-
-<section id="ABOUT" class="sectionScroll"  style="text-align: center; width: 100%;">
-    <app-about></app-about>
-</section>
-<section id="WORK" class="secondScroll">
-    <app-work></app-work>
-</section>
-<section id="CONTACT" class="secondScroll">
-    <app-contact></app-contact>
-</section>
+    <section id="ABOUT"   >
+        <div class = "sec">
+         <app-about></app-about>
+        </div>
+    </section>
+    <section id="WORK"  >
+        <div class = "sec"><app-work></app-work></div>
+        
+    </section>
+    <section id="CONTACT" >
+        <div class = "sec"><app-contact></app-contact></div>
+    </section>
 
 <!-- <script type="text/javascript">
     var section = document.querySelector('containerImge');
@@ -39,3 +48,5 @@
         section.style.clipPath = "circle(" + value + "% at 45% 40% )" 
     })
 </script> -->
+
+</div>

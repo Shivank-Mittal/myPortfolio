@@ -10,7 +10,7 @@ export class MainComponent implements OnInit {
 
 
   public socialMediaAcountIcons = [icons.Email, icons.Linkedin, icons.github , icons.facebook, icons.instagram];
-  public dasboardMenue = ["ABOUT","WORK","CONTACT"];
+  public dasboardMenue = ["ABOUT","WORK","CONTACT","COVID-19"];
   constructor() { }
 
   ngOnInit() {
@@ -19,6 +19,7 @@ export class MainComponent implements OnInit {
   public goToLink(clickedIcon : string){
 
     if(clickedIcon != icons.Email){
+
       window.open(socialAccounts[clickedIcon]);
     }
     else{
@@ -34,6 +35,7 @@ export class MainComponent implements OnInit {
 }
   public toLoacation( item : string)
   {
+    console.log("test");
     console.log(item)
     document.getElementById(item).scrollIntoView({behavior:"smooth"});
   }
