@@ -1,158 +1,220 @@
 div.body{
 
-margin: 10%;
-align-items: center;
+    margin-top: 10vh;
+    align-items: center;
+    width: 100%;
 }
 .box
 {
-    position: absolute;
-    left: 7%;
-    transform:  translate(0%,0% ) rotateY(-25deg) skew(+5deg);
-    width: 25%;
-    height: 50%;
-    transform-style: preserve-3d;
-    perspective: 2000px;
-    transition: 0.5s;
-}
-
-.box:hover{
-    transform:  translate(0%,0%)  ;
-}
-.box:before
-{
-    content: '';
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border-top: 20px solid gray;
-    border-left: 20px solid gray;
-    box-sizing: border-box;
-}
-
-.box:after
-{
-    content: '';
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border-bottom: 20px solid gray;
-    border-right: 20px solid gray;
-    box-sizing: border-box;
-}
-.box .text
-{
-    position:  absolute;
-    top: 7% ;
-    left: -7%;
-    background: #262626;
-    width: calc(100% + 60px);
-    height: calc(100% - 60px);
-    transition: 0.4s;
-    transform: rotateY(30deg) skew(+5deg)
-
-}
-.box:hover .text 
-{
-    transform: rotateY(0deg) ;
-}
-
-.text div
-{
-    position: absolute;
-    /* top: 50%; */
-    left: 0;
-    width: 100%;
-    /* transform: translate(-50% ); */
-    padding: 40px 60px;
-    box-sizing: border-box;
-    text-align:  left;
-    z-index: 3;
-}
-
-.text div h1
-{
-    margin: 0 0 6%;
-    padding: 0 ;
-    color: #fff;
-}
-
-.text div p
-{
-    margin: 0 0 7%;
-    padding: 0 ;
-    color: #fff;
-    font-size: 90%;
+    display: none;
 }
 
 .skillContainer
-{
-    font-size: 0.8rem;
-    min-height: 10vh;
-    width: fit-content;
-    display: flex;
-    position: absolute;
-    right:5%;
-    justify-content: center;
-    align-items:  center;
-    flex-direction: column; 
-}
-.skillContainer h1
-{
-    font-size: 300%;
-}
-.skillContainer a
-{
-    position: relative;
-    width: 12em;
-    height: 3.5em;
-    margin:  2% 0;
-    font-size: 150%;
-    display: inline-flex;
-    align-items:  center;
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-    transition: 0.5s ;
-}
+    {
+        font-size: 0.8rem;
+        min-height: 10vh;
+        width: fit-content;
+        display: flex;
+        position: absolute;
+        right:5%;
+        justify-content: center;
+        align-items:  center;
+        flex-direction: column; 
+    }
 
-.skillContainer a:hover
-{
-    color: #fff;
-}
+    .skillContainer h1
+    {
+        margin-bottom: 3rem;
+        font-weight: bolder;
 
-.skillContainer a:before
-{
-    content:'';
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 0;
-    height: 100%;
-    background: url("../../assets/buttons/btn-red.png");
-    background-size: cover;
-    transform-origin: left ;
-    transition: 0.5s;
-}
+        font-size: 300%;
+    }
+    .skillContainer a
+    {
+        margin-top: 1rem;
+        position: relative;
+        width: 8rem;
+        height: 3.5rem;
+        font-style: oblique;
+        font-weight: bold;
+        font-size: 100%;
+        display: inline-flex;
+        align-items:  center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        transition: 0.5s ;
+    }
+    
 
-.skillContainer a:nth-child(2):before
-{
-    background: url("../../assets/buttons/btn-blue.png");
-    background-size: cover;
-}
+    .skillContainer a:hover
+    {
+        font-size: 130%;
+        text-decoration: underline;
+    }
 
-.skillContainer a:hover:before
-{
-    width: 100%;
-}
-.skillContainer a span 
-{
-    /* position: relative; */
-    z-index: 10;
+    
 
+@media only screen and (min-width: 780px){
+    div.body{
+
+        
+    margin: 10%;
+    align-items: center;
+    background-color: red;
+    }
+    .box
+    {
+        display: block;
+        position: absolute;
+        left: 7%;
+        transform:  translate(0%,0% ) rotateY(-25deg) skew(+5deg);
+        width: 25%;
+        height: 50%;
+        transform-style: preserve-3d;
+        perspective: 2000px;
+        transition: 0.5s;
+    }
+
+    .box:hover{
+        transform:  translate(0%,0%)  ;
+    }
+    .box:before
+    {
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border-top: 20px solid gray;
+        border-left: 20px solid gray;
+        box-sizing: border-box;
+    }
+
+    .box:after
+    {
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border-bottom: 20px solid gray;
+        border-right: 20px solid gray;
+        box-sizing: border-box;
+    }
+    .box .text
+    {
+        position:  absolute;
+        top: 7% ;
+        left: -7%;
+        background: #262626;
+        width: calc(100% + 60px);
+        height: calc(100% - 60px);
+        transition: 0.4s;
+        transform: rotateY(30deg) skew(+5deg)
+
+    }
+    .box:hover .text 
+    {
+        transform: rotateY(0deg) ;
+    }
+
+    .text div
+    {
+        position: absolute;
+        top: 50%;
+        /* left: 10;
+        width: 100%;
+        /* transform: translate(-50% ); */
+        padding: 40px 60px;
+        box-sizing: border-box;
+        text-align:  left;
+        z-index: 3;
+    }
+
+    .text div h1
+    {
+        margin: 0 0 6%;
+        padding: 0 ;
+        color: #fff;
+    }
+
+    .text div p
+    {
+        margin: 0 0 7%;
+        padding: 0 ;
+        color: #fff;
+        font-size: 90%;
+    }
+
+    .skillContainer
+    {
+        font-size: 0.8rem;
+        min-height: 10vh;
+        width: fit-content;
+        display: flex;
+        position: absolute;
+        right:5%;
+        justify-content: center;
+        align-items:  center;
+        flex-direction: column; 
+    }
+    .skillContainer h1
+    {
+        font-size: 300%;
+    }
+    .skillContainer a
+    {
+        position: relative;
+        width: 12em;
+        height: 3.5em;
+        margin:  2% 0;
+        font-size: 150%;
+        display: inline-flex;
+        align-items:  center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        transition: 0.5s ;
+    }
+
+    .skillContainer a:hover
+    {
+        color: #fff;
+    }
+
+    .skillContainer a:before
+    {
+        content:'';
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 0;
+        height: 100%;
+        background: url("../../assets/buttons/btn-red.png");
+        background-size: cover;
+        transform-origin: left ;
+        transition: 0.5s;
+    }
+
+    .skillContainer a:nth-child(2):before
+    {
+        background: url("../../assets/buttons/btn-blue.png");
+        background-size: cover;
+    }
+
+    .skillContainer a:hover:before
+    {
+        width: 100%;
+    }
+    .skillContainer a span 
+    {
+        /* position: relative; */
+        z-index: 10;
+
+    }
 }
