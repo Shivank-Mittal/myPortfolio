@@ -26,7 +26,6 @@ div.body{
     {
         margin-bottom: 3rem;
         font-weight: bolder;
-
         font-size: 300%;
     }
     .skillContainer a
@@ -126,7 +125,7 @@ div.body{
     .text div
     {
         position: absolute;
-        top: 50%;
+        top: 10%;
         /* left: 10;
         width: 100%;
         /* transform: translate(-50% ); */

@@ -9,7 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class InfoComponent implements OnInit {
 
   _imagePosition = "relative";  
-  public picture = "./assets/pictures/SM.jpg";
+  public picture = "./assets/pictures/SMMicro.jpg";
 
   
   constructor(private sanitizer: DomSanitizer) { }
