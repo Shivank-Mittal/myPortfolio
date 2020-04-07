@@ -1,160 +1,313 @@
-*{
-    margin: 0;
-    padding: o;
-    box-sizing: border-box;
-}
 
 body 
 {
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 100vh;
-        min-height: 80vh;
+        min-width: 100vw;
+        min-height: 100vh;
         background:#03080a ;
 }
 
 .formContainer
-{
-    width: 80%;
-    padding: 20px;
+    {
+        width: 80vw;
+        padding: 20px;
 
-}
+    }
 
 .formContainer h2
-{
- width: 100%;
- color: #45f3ff;
- font-size: 36px;
- text-align: center;
- margin-bottom: 10px;
+    {
+    width: 100vw;
+    color: #45f3ff;
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 30px;
 
-}
+    }
 
 .formContainer .row100
-{
-    position: relative;
-    width: 100px;
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
-}
+    {
+        position: relative;
+        width: 100px;
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    }
 
 .formContainer .row100 .col
-{
-    position: relative;
-    width: 200px;
-    padding: 0 10px;
-    margin: 25px 0 10px;
-    transition: 0.5s;
+    {
+        position: relative;
+        width: 200px;
+        padding: 0 10px;
+        margin: 25px 0 10px;
+        transition: 0.5s;
 
-}
+    }
+    .formContainer .row100 .inputBox
+    {
+        
+        position: relative;
+        width: 400px;
+        padding: 20px;
+        color: #45f3ff;
 
-.formContainer .row100 .inputBox
-{
-    
-    position: relative;
-    width: 400px;
-    padding: 20px;
+    }
+    .formContainer .row100 .inputBox input , 
+    .formContainer .row100 .inputBox.textarea textarea
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        padding: 0 20px 30px;
+        z-index: 1;
+        color: #000;
+    }
+
+    .formContainer .row100 .inputBox .text
+    {
+        position: absolute;
+        top:0;
+        left: 0;
+        line-height: 35px;
+        font-size: 18px;
+        padding: 0 8px;
+        display: block;
+        transition: 0.5s;
+        pointer-events: none;
+
+    }
+
+    .formContainer .row100 .inputBox input:focus + .text,
+    .formContainer .row100 .inputBox input:valid + .text
+    {
+        top:-35px;
+        left: -10px;
+
+    }
+
+    .formContainer .row100 .inputBox .line
+    {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 60vw;
+        height: 2px;
+        background: #45f3ff;
+        transition: 0.5s;
+        border-radius: 2px;
+        pointer-events: none;
+    }
+
+    .formContainer .row100 .inputBox input:focus ~ .line,
+    .formContainer .row100 .inputBox input:valid ~ .line
+    {
+        height: 100%;
+    }
+
+    .formContainer .row100 .inputBox.textarea
+    {
+        position: relative;
+        width: 90%;
+        height: 100px;
+        padding:10px 0;
+
+    }
+
+    .formContainer .row100 .inputBox.textarea textarea
+    {
+        height: 100%;
+        resize: none;
+
+    }
+
+
+    .formContainer .row100 .inputBox textarea:focus + .text,
+    .formContainer .row100 .inputBox textarea:valid + .text
+    {
+        top:-35px;
+        left: -10px;
+
+    }
+
+    .formContainer .row100 .inputBox textarea:focus ~ .line,
+    .formContainer .row100 .inputBox textarea:valid ~ .line
+    {
+        height: 100%;
+    }
+
+    input[type="submit"]
+    {
+        border: none;
+        padding: 3px 20px;
+        cursor: pointer;
+        outline: none;
+        background: #45f3ff;
+        color: #000;
+        font-size: 18px;
+        border-radius: 2px;
+
+    }
+ 
+@media only screen and (min-width: 780px){
+
+    body 
+    {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 100vw;
+            min-height: 100vh;
+            background:#03080a ;
+    }
+
+    .formContainer
+    {
+        width: 80%;
+        padding: 20px;
+
+    }
+
+    .formContainer h2
+    {
+    width: 100%;
     color: #45f3ff;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
 
-}
-.formContainer .row100 .inputBox input , 
-.formContainer .row100 .inputBox.textarea textarea
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-    outline: none;
-    font-size: 15px;
-    padding: 0 20px 30px;
-    z-index: 1;
-    color: #000;
-}
+    }
 
-.formContainer .row100 .inputBox .text
-{
-    position: absolute;
-    top:0;
-    left: 0;
-    line-height: 35px;
-    font-size: 18px;
-    padding: 0 8px;
-    display: block;
-    transition: 0.5s;
-    pointer-events: none;
+    .formContainer .row100
+    {
+        position: relative;
+        width: 100px;
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    }
 
-}
+    .formContainer .row100 .col
+    {
+        position: relative;
+        width: 200px;
+        padding: 0 10px;
+        margin: 25px 0 10px;
+        transition: 0.5s;
 
-.formContainer .row100 .inputBox input:focus + .text,
-.formContainer .row100 .inputBox input:valid + .text
-{
-    top:-35px;
-    left: -10px;
+    }
 
-}
+    .formContainer .row100 .inputBox
+    {
+        
+        position: relative;
+        width: 400px;
+        padding: 20px;
+        color: #45f3ff;
 
-.formContainer .row100 .inputBox .line
-{
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #45f3ff;
-    transition: 0.5s;
-    border-radius: 2px;
-    pointer-events: none;
-}
+    }
+    .formContainer .row100 .inputBox input , 
+    .formContainer .row100 .inputBox.textarea textarea
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        padding: 0 20px 30px;
+        z-index: 1;
+        color: #000;
+    }
 
-.formContainer .row100 .inputBox input:focus ~ .line,
-.formContainer .row100 .inputBox input:valid ~ .line
-{
-    height: 100%;
-}
+    .formContainer .row100 .inputBox .text
+    {
+        position: absolute;
+        top:0;
+        left: 0;
+        line-height: 35px;
+        font-size: 18px;
+        padding: 0 8px;
+        display: block;
+        transition: 0.5s;
+        pointer-events: none;
 
-.formContainer .row100 .inputBox.textarea
-{
-    position: relative;
-    width: 100%;
-    height: 100px;
-    padding:10px 0;
+    }
 
-}
+    .formContainer .row100 .inputBox input:focus + .text,
+    .formContainer .row100 .inputBox input:valid + .text
+    {
+        top:-35px;
+        left: -10px;
 
-.formContainer .row100 .inputBox.textarea textarea
-{
-    height: 100%;
-    resize: none;
+    }
 
-}
+    .formContainer .row100 .inputBox .line
+    {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #45f3ff;
+        transition: 0.5s;
+        border-radius: 2px;
+        pointer-events: none;
+    }
+
+    .formContainer .row100 .inputBox input:focus ~ .line,
+    .formContainer .row100 .inputBox input:valid ~ .line
+    {
+        height: 100%;
+    }
+
+    .formContainer .row100 .inputBox.textarea
+    {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        padding:10px 0;
+
+    }
+
+    .formContainer .row100 .inputBox.textarea textarea
+    {
+        height: 100%;
+        resize: none;
+
+    }
 
 
-.formContainer .row100 .inputBox textarea:focus + .text,
-.formContainer .row100 .inputBox textarea:valid + .text
-{
-    top:-35px;
-    left: -10px;
+    .formContainer .row100 .inputBox textarea:focus + .text,
+    .formContainer .row100 .inputBox textarea:valid + .text
+    {
+        top:-35px;
+        left: -10px;
 
-}
+    }
 
-.formContainer .row100 .inputBox textarea:focus ~ .line,
-.formContainer .row100 .inputBox textarea:valid ~ .line
-{
-    height: 100%;
-}
+    .formContainer .row100 .inputBox textarea:focus ~ .line,
+    .formContainer .row100 .inputBox textarea:valid ~ .line
+    {
+        height: 100%;
+    }
 
-input[type="submit"]
-{
-    border: none;
-    padding: 7px 35px;
-    cursor: pointer;
-    outline: none;
-    background: #45f3ff;
-    color: #000;
-    font-size: 18px;
-    border-radius: 2px;
+    input[type="submit"]
+    {
+        border: none;
+        padding: 7px 35px;
+        cursor: pointer;
+        outline: none;
+        background: #45f3ff;
+        color: #000;
+        font-size: 18px;
+        border-radius: 2px;
+
+    }
 
 }
