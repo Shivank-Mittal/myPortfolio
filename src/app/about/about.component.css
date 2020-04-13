@@ -9,6 +9,7 @@ div.body{
     display: none;
 }
 
+
 .skillContainer
     {
         font-size: 0.8rem;
@@ -20,6 +21,8 @@ div.body{
         justify-content: center;
         align-items:  center;
         flex-direction: column; 
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.8);
     }
 
     .skillContainer h1
@@ -55,13 +58,16 @@ div.body{
     
 
 @media only screen and (min-width: 780px){
+
+
     div.body{
 
         
     margin: 10%;
     align-items: center;
-    background-color: red;
     }
+
+
     .box
     {
         display: block;
@@ -126,9 +132,6 @@ div.body{
     {
         position: absolute;
         top: 10%;
-        /* left: 10;
-        width: 100%;
-        /* transform: translate(-50% ); */
         padding: 40px 60px;
         box-sizing: border-box;
         text-align:  left;
@@ -161,6 +164,7 @@ div.body{
         justify-content: center;
         align-items:  center;
         flex-direction: column; 
+       
     }
     .skillContainer h1
     {
@@ -212,7 +216,6 @@ div.body{
     }
     .skillContainer a span 
     {
-        /* position: relative; */
         z-index: 10;
 
     }
