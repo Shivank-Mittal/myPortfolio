@@ -1,15 +1,19 @@
-#main{
-}
 
+#HOME{
+    background-image: url("../../assets/pictures/SMDesinged.jpg");
+}
 #main section {
     background-size: cover;
     height:100vh;
     width:100vw;
     display: table;
+    
 }
+
 #main section div.sec { 
     vertical-align: middle;
     text-align: center;
+    
 }
 .img-container {
     margin-left: 35vw;
