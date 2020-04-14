@@ -1,6 +1,10 @@
 
 #HOME{
-    background-image: url("../../assets/pictures/SMDesinged.jpg");
+    background-image: url("../../assets/pictures/SMSmalldesing.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: center center;
+    background-attachment: fixed;
 }
 #main section {
     background-size: cover;
@@ -109,3 +113,11 @@ h1.about{
 }
   
 
+@media only screen and (min-width: 780px){
+
+    
+#HOME{
+    background-image: url("../../assets/pictures/SMDesinged.jpg");
+}
+
+}

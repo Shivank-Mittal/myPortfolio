@@ -6,6 +6,7 @@ import {
   MatToolbarModule,
   MatIconModule,
   MatGridListModule,
+  MatListModule,
 
 } from '@angular/material';
 
@@ -16,7 +17,8 @@ const Material =[
   MatSidenavModule,
   MatToolbarModule,
   MatIconModule,
-  MatGridListModule 
+  MatGridListModule,
+  MatListModule 
 ]
 
 
