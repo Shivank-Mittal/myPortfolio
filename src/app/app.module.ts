@@ -12,7 +12,6 @@ import { MaterilModule } from './materil/materil.module';
 import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
-import { FlexLayoutModule } from "@angular/flex-layout";
 
 
 @NgModule({
@@ -30,8 +29,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     BrowserAnimationsModule,
     MaterilModule,
     FormsModule,
-    HttpClientModule,
-    FlexLayoutModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
