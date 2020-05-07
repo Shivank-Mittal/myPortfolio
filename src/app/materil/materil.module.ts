@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
-import {
-  MatButtonModule,
-  MatSliderModule,
-  MatSidenavModule,
-  MatToolbarModule,
-  MatIconModule,
-  MatGridListModule,
-  MatListModule,
-
-} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 const Material =[
