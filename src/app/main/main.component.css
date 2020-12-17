@@ -1,37 +1,3 @@
-
-
-mat-toolbar{
-  justify-content: space-around;
-  position: fixed;
-  position: -webkit-sticky; /* For macOS/iOS Safari */
-  top: 0; /* Sets the sticky toolbar to be on top */
-  z-index: 1000; 
-    
+body{
 }
 
-mat-toolbar, .mat-toolbar-single-row {
-  display: flex;
-  box-sizing: border-box;
-  padding: 0 16px;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-  white-space: nowrap;
-  justify-content: space-around;
-}
-span {
-  padding: 1rem;
-}
-a { color: inherit;
-  text-decoration: none; } 
-
-h1 {
-font-family:   'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 30%;
-font-weight: bold;
-  }
-
-  .info
-  {
-    z-index: -1;
-  }

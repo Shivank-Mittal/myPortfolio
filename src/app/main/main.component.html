@@ -1,23 +1,27 @@
 
-<div class="navBar">
+<!-- <div class="navBar">
 <mat-toolbar  >
     <mat-toolbar-row>
-        <div >
+        <div class = toolbar >
             <a (click) = "toLoacation('HOME')">HOME</a>
         </div>
-        <div>
+        <div class = toolbar>
             <span *ngFor="let item of dasboardMenue">
                 <a (click) = "toLoacation(item)"  >{{item}}</a>
             </span>  
         </div>
-        <div  >
+        <div  class = toolbar>
             <span *ngFor="let icon of socialMediaAcountIcons">
                 <a (click) = "goToLink(icon)" href="#"> <mat-icon svgIcon={{icon}}></mat-icon></a>
             </span> 
         </div>
     </mat-toolbar-row>
 </mat-toolbar>
-</div>
-<div class="info">
-    <app-info></app-info>
-</div>
+</div> -->
+<body>
+    
+    <div class="info">
+        <app-info></app-info>
+    </div>
+
+</body>
