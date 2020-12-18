@@ -12,6 +12,7 @@ import { MaterilModule } from './materil/materil.module';
 import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     WorkComponent,
     ContactComponent,
-    routingComponent
+    routingComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
