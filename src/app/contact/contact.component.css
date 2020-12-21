@@ -1,25 +1,42 @@
 
 body 
 {
-        min-height: 100vh;
-        overflow: hidden;
-        background-color: #5D00FF;
+    overflow: hidden;
+    background-color: #5D00FF;
 }
 
 .summary{
-    width: 70vw;
-    height: 10vw;
+    width: 90vw;
+    height: 30vw;
     background-color:#141C3A;
     border-radius: 20px;
-    transform: translateY(-40%);
-    z-index: 100;
+    transform: translateY(-50%);
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    text-align: center;
     color: #ffffff;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    
+}
+
+.summary .summaryData {
+    padding: 0;
+    margin-left: 30px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+@media only screen and (min-width: 750px){
+    .summary{
+        width: 70vw;
+    height: 10vw;
+    }
 }

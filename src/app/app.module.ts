@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ProjectsComponent } from './projects/projects.component';
     WorkComponent,
     ContactComponent,
     routingComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
