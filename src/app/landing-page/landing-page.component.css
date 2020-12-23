@@ -1,77 +1,33 @@
-.landingPage{
-    padding: 0;
-    margin: 0;
-    position: relative;
-    overflow: hidden;
-    font-family: Rockwell;
-    margin-bottom: 15vh;
+.profile-picture, .social {
+    display: none
 }
 
-.designTop{
-    margin-right: 0;
-    width: 80%;
-    
-}
-.watermarkLogo{
-    width: 80%;
-    margin-left: 5vw;
-    opacity: 60%;
-    position: relative;
-
-}
-
-.colaborateButton{
-    position: absolute;
-    top:32%;
-    right:20%;
-    width: fit-content;
-    background-color: #ffffff;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 1s;
-    
-}
-.colaborateButton:hover{
-
-    background-color: #5D00FF;
-}
-
-.colaborateText{
-    font-size: 1.2vw;
-    transition: 1.2s;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    margin-left: 2vh;
-    margin-right: 2vh;
-}
-.colaborateButton:hover .colaborateText{
-    font-size: 1.5vw;
+.hero{
+    background: #5D00FF;
     color: #ffffff;
-}
-
-
-.coloborateImage{
-    width: 9vh;
-}
-
-.bottomRowLandingPage{
-    width: 7vw;
-}
-
-.myImg{
-    
-    margin-left: 50%;
-    transform: translateX(-50%);
+    display: grid;
     text-align: center;
-    font-weight: bolder;
-    font-size: x-large;
-}
-.myImg img {
-    width: 10vw;
-    
+    padding: 4em;
 }
 
-@media only screen and (min-width: 780px){
-
+.hero .content{
+    font-weight: bold;
 }
+.hero .content  p{
+    color: #FF46CB;
+}
+
+.hero-design{
+    width: 4em;
+    height: 7em;
+    position: absolute;
+    top:0;
+    left: 0;
+    margin:0;
+}
+
+.scroll{
+    width: 25px;
+    margin-top: 2em;
+}
+

@@ -7,4 +7,25 @@
   } */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+  margin: 0; 
+  font-family: Arial Rounded MT; 
+  padding: 0; 
+   }
+   
+ul{list-style-type: none;}
+
+a{
+  text-decoration: none;
+}
+
+img{ width: 100%}
+
+section{
+  padding: 4em 2em;
+
+  text-align: center;
+}
+
+
+

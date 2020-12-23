@@ -1,16 +1,5 @@
-body{
-    overflow: hidden;
-}
 
-.landing{
-    background-image: url("../../assets/pictures/SMSmalldesing.jpg");
-    width: 100vw;
-  display: table;
-  height: 100vh;
-  background-repeat: no-repeat;
-  transform: translateY(-10%);
-  
-}
+
 .info{
     background-color: #5D00FF;
     width: 100vw;
@@ -25,18 +14,34 @@ body{
 }
 
 .infoText{
-    font-size: calc(1.5rem + 1vw);
-    font-weight:normal;
-    padding-right: 2px;
-    margin-right: 0px;
+    /* padding-right: 2px; */
+    /* margin: 2em; */
+    /* padding: 1em; */
     text-align: justify;
     width: fit-content;
-    font-size: calc(0.8rem + 0.5vw);
-    margin-top: 4vh;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    
+    background: white;
+    border: 2px solid #FF46CB ;
+    border-radius: 10px;
+    width: 30vw;
 }
+.infoText h1{
+    text-align: center;
+    color: #5D00FF;
+    margin-top: .5em ;
+}
+.infoText p {
+    margin: 1em;
+    font-size: calc(1.5rem + 1vw);
+    font-weight:normal;
+    font-size: calc(0.8rem + 0.5vw);
+    color: #252525;
+}
+.avatar{
+    width: 2em;
+    /* height: 1em; */
+}
+
+
 
 @keyframes animate
 {
