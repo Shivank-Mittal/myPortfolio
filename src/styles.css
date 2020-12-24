@@ -25,7 +25,20 @@ section{
   padding: 4em 2em;
 
   text-align: center;
+
 }
 
+@media only screen  and (min-width: 800px){
+  section{
+    padding: 4em 2em;
+  }
+}
+
+
+@media only screen  and (min-width: 1250px){
+  section{
+    padding: 4em 4em;
+  }
+}
 
 

@@ -1,1 +1,52 @@
-.skill-container{}
+.skill-container ul li{
+    padding:2em;
+    border: 2px #FF46CB solid;
+    border-radius: 20px;
+    margin-bottom: 1em ;
+    text-align: justify;
+
+}
+
+
+
+.skill-title{
+    margin-top: 1em;
+    text-align: center;
+    color: black ;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.skill-des{
+    font-size: 0.9em;
+}
+
+.one img{
+    width: 120px;
+    display: grid;
+    place-content: centre;
+    margin: 0 auto;
+    
+}
+.two img{
+    width: 120px;
+    display: grid;
+    place-content: centre;
+    margin: 0 auto;
+    
+}
+.three img{
+    width: 50px;
+    display: grid;
+    place-content: centre;
+    margin: 0 auto;
+    
+}
+
+@media only screen  and (min-width: 800px){
+    .skill-container ul  {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 1em;
+    }
+}
