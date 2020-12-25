@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import gsap from 'gsap';
 
 @Component({
   selector: 'app-projects',
@@ -10,6 +11,45 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    gsap.from(".transition2", {
+      scrollTrigger: {
+        trigger: '.transition2',
+        start: "Top bottom",
+        markers: true,
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1.2,
+      stagger: .3
+    })
+
+    gsap.from(".transition3", {
+      scrollTrigger: {
+        trigger: '.transition3',
+        start: "Top bottom",
+        markers: true
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1.2,
+      stagger: .3
+    })
+
+    gsap.from(".transition4", {
+      scrollTrigger: {
+        trigger: '.transition4',
+        start: "Top bottom",
+        markers: true
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1.2,
+      stagger: .3
+    })
+
+
+
   }
 
 }

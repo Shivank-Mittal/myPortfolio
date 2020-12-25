@@ -115,3 +115,19 @@
 
     
 }
+
+
+.scroll-wheel{
+    animation: scrollAnim 1s infinite alternate-reverse;
+
+}
+
+@keyframes scrollAnim{
+    from{
+        transform:translate(1520.098px, 627.681px);
+        z-index: 5;
+    }
+    to{
+        transform:translate(1520.098px, 649px);
+    }
+}

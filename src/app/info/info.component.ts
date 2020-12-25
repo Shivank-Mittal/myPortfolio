@@ -1,5 +1,4 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-info',
@@ -8,14 +7,28 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class InfoComponent implements OnInit {
 
-  _imagePosition = "relative";  
+  _imagePosition = "relative";
   public picture = "./assets/pictures/SMDesinged.jpg";
 
-  
-  constructor(private sanitizer: DomSanitizer) { }
+
+  constructor() { }
 
   ngOnInit() {
-    
+
+
+
+    // gsap.from(".info", {
+    //   scrollTrigger: {
+    //     trigger: '.info',
+    //     start: "Top bottom",
+    //     markers: true,
+    //   },
+    //   y: 50,
+    //   opacity: 0,
+    //   duration: 1.2,
+    //   stagger: .3
+    // })
+
   }
 
 }
