@@ -15,8 +15,7 @@ export class ProjectsComponent implements OnInit {
     gsap.from(".transition2", {
       scrollTrigger: {
         trigger: '.transition2',
-        start: "Top bottom",
-        markers: true,
+        start: "Top bottom"
       },
       y: 50,
       opacity: 0,
@@ -27,8 +26,7 @@ export class ProjectsComponent implements OnInit {
     gsap.from(".transition3", {
       scrollTrigger: {
         trigger: '.transition3',
-        start: "Top bottom",
-        markers: true
+        start: "Top bottom"
       },
       y: 50,
       opacity: 0,
@@ -39,17 +37,13 @@ export class ProjectsComponent implements OnInit {
     gsap.from(".transition4", {
       scrollTrigger: {
         trigger: '.transition4',
-        start: "Top bottom",
-        markers: true
+        start: "Top bottom"
       },
       y: 50,
       opacity: 0,
       duration: 1.2,
       stagger: .3
     })
-
-
-
   }
 
 }

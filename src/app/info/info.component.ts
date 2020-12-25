@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import gsap from 'gsap';
 
 @Component({
   selector: 'app-info',
@@ -7,27 +8,45 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class InfoComponent implements OnInit {
 
-  _imagePosition = "relative";
-  public picture = "./assets/pictures/SMDesinged.jpg";
-
 
   constructor() { }
 
   ngOnInit() {
 
+    gsap.from(".info-container", {
+      scrollTrigger: {
+        trigger: '.info-container',
+        start: "Top bottom"
+      },
+      y: 100,
+      opacity: 0,
+      duration: 1.5,
+    })
 
 
-    // gsap.from(".info", {
-    //   scrollTrigger: {
-    //     trigger: '.info',
-    //     start: "Top bottom",
-    //     markers: true,
-    //   },
-    //   y: 50,
-    //   opacity: 0,
-    //   duration: 1.2,
-    //   stagger: .3
-    // })
+    gsap.from(".avatar", {
+      scrollTrigger: {
+        trigger: '.avatar',
+        start: "Top bottom"
+      },
+      opacity: 0,
+      duration: 1.2,
+      delay: 0.5,
+      scale: 0.5,
+      rotation: 20
+    })
+
+    gsap.from(".content", {
+      scrollTrigger: {
+        trigger: '.content',
+        start: "Top bottom"
+      },
+      y: -50,
+      opacity: 0,
+      duration: 1.2,
+      delay: 1,
+      scale: 0.1,
+    })
 
   }
 

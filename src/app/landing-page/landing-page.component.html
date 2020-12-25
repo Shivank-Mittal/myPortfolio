@@ -50,10 +50,20 @@
 
 
     <div class="social">
-        <img class="social-icons" src="../../assets/Landing Page/Icon-facebook.svg" alt="FaceBook Icon" />
-        <img class="social-icons" src="../../assets/Landing Page/Icon-linkedin-in.svg" alt="Linked-in Icon" />
+      <a  (click)="onpenSocialPage('lnkedin')" >
+        <img  class="social-icons" src="../../assets/Landing Page/Icon-linkedin-in.svg" alt="Linked-in Icon" />
+      </a>
+      <a (click)="onpenSocialPage('github')" >
+        <img  class="social-icons" src="../../assets/Landing Page/Icon-github.svg" alt="Github Icon" />
+      </a>
+      <a (click)="onpenSocialPage('facebook')" >
+          <img class="social-icons" src="../../assets/Landing Page/Icon-facebook.svg" alt="FaceBook Icon" />
+      </a> 
+      
+      <a (click)="onpenSocialPage('twitter')" > 
         <img class="social-icons" src="../../assets/Landing Page/Icon-twitter.svg" alt="Twitter Icon" />
-        <img class="social-icons" src="../../assets/Landing Page/Icon-github.svg" alt="Github Icon" />
+      </a>
+        
         
     </div>
 </div>
