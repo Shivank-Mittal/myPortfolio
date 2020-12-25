@@ -1,3 +1,6 @@
+.skill-container ul{
+    padding: 0;
+}
 .skill-container ul li{
     padding:2em;
     border: 2px #FF46CB solid;
