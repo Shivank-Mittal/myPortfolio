@@ -10,6 +10,5 @@ app.use(express.static('./dist/myWebApplicationUI'));
 app.get('/*', function(req,res) {
 res.sendFile('index.html', { root:'dist/myWebApplicationUI/index.html'});
 });
-
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
