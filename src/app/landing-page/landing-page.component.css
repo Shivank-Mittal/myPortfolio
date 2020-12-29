@@ -1,8 +1,9 @@
-.profile-picture, .social {
+.profile-picture,
+.social {
     display: none
 }
 
-.hero{
+.hero {
     background: #5D00FF;
     color: #ffffff;
     display: grid;
@@ -10,27 +11,29 @@
     padding: 4em;
 }
 
-.hero .content{
+.hero .content {
     font-weight: bold;
 }
-.hero .content  p{
+
+.hero .content p {
     color: #FF46CB;
 }
 
-.hero-design{
+.hero-design {
     width: 4em;
     height: 7em;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
-    margin:0;
+    margin: 0;
 }
 
-.scroll{
+.scroll {
     width: 25px;
     margin-top: 2em;
 }
-.downloadResume{
+
+.downloadResume {
     width: 20px;
     margin-left: .5em;
 
@@ -38,72 +41,80 @@
 
 
 
-@media only screeen and  (min-width : 800px){
-    
-}
+@media only screeen and (min-width : 800px) {}
 
-@media only screen  and (min-width: 1050px){
-    .landing-page{
+@media only screen and (min-width: 1050px) {
+    .landing-page {
         display: grid;
         grid-template-columns: auto 60%;
-        height: 100vh;  
+        height: 100vh;
     }
-    .profile-picture{
+
+    .profile-picture {
         width: 12vh;
         display: block;
         grid-row-start: 1;
-        margin: 2em 2em ;
+        margin: 2em 2em;
     }
-    .hero{
+
+    .hero {
         display: unset;
         grid-column-start: 2;
         grid-row-start: 1;
         grid-row-end: 3;
         border-bottom-left-radius: 50px;
-        height: 80vh; 
+        height: 80vh;
     }
-    .hero h1{
+
+    .hero h1 {
         font-family: Arial Rounded MT;
         font-size: 2.2em;
+        line-height: 1em;
     }
+
     .hero .content {
         padding: 6em 1em 6em 8em;
         text-align: left;
     }
-    .hero-design{
+
+    .hero-design {
         position: relative;
         height: 100%;
-        width:350px;
+        width: 350px;
         margin-left: -60vw;
         margin-top: -80vh;
         position: unset;
-        
+
     }
-    .social{
+
+    .social {
         display: block;
         width: 3.5vh;
-        margin: 0 3em ;
-        
+        margin: 0 3em;
+
     }
-    .social img{
-        margin-bottom:1em ;
+
+    .social img {
+        margin-bottom: 1em;
         cursor: pointer;
     }
-    
+
 }
 
-@media only screen  and (min-width: 1250px){
+@media only screen and (min-width: 1250px) {
 
-    .profile-picture{
+    .profile-picture {
         width: 15vh;
         display: block;
         grid-row-start: 1;
-        margin: 3em 4em ;
+        margin: 3em 4em;
     }
-    .hero{
+
+    .hero {
         height: 90vh;
     }
-    .hero h1{
+
+    .hero h1 {
         font-family: Arial Rounded MT;
         font-size: 2.5em;
     }
@@ -112,27 +123,29 @@
         padding: 8em 5em 6em 12em;
         text-align: left;
     }
-    .social{
+
+    .social {
         display: block;
         width: 3.5vh;
-        margin: 0 6em ;
+        margin: 0 6em;
     }
 
-    
+
 }
 
 
-.scroll-wheel{
+.scroll-wheel {
     animation: scrollAnim 1s infinite alternate-reverse;
 
 }
 
-@keyframes scrollAnim{
-    from{
-        transform:translate(1520.098px, 627.681px);
+@keyframes scrollAnim {
+    from {
+        transform: translate(1520.098px, 627.681px);
         z-index: 5;
     }
-    to{
-        transform:translate(1520.098px, 649px);
+
+    to {
+        transform: translate(1520.098px, 649px);
     }
 }

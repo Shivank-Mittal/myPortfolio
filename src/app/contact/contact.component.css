@@ -1,43 +1,45 @@
-.design-footer{
+.design-footer {
     display: none;
 }
-.contact{
+
+.contact {
     margin-top: 10vh;
-    height:25vh;
+    height: 25vh;
     background: #5D00FF;
-    
+
 }
 
-.content-container{
-width: 70vw;
-height: 25vh;
-background: #141C3A;
-border-radius: 20px;
-color: white;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
-padding: 1em;
-transform: translateY(-10vh);
-font-size: .9em;
-margin: auto;
+.content-container {
+    width: 70vw;
+    height: 25vh;
+    background: #141C3A;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+    transform: translateY(-10vh);
+    font-size: .9em;
+    margin: auto;
 }
 
-.mail-box{
+.mail-box {
     text-align: center;
     background: white;
     width: fit-content;
     border-radius: 20px;
     padding: .5em 2em;
     color: #5D00FF;
-}
-
-.mail-box p{
-    margin: auto;
-    text-align: center;
     cursor: pointer;
 }
+
+.mail-box p {
+    margin: auto;
+    text-align: center;
+}
+
 .social {
     display: flex;
     justify-content: center;
@@ -45,29 +47,36 @@ margin: auto;
     justify-content: space-around;
     margin-bottom: 2em;
 }
-.social-icons{
+
+.social-icons {
     width: 1.5em;
 }
-@media only screen  and (min-width: 800px){
-    .contact{
-        height:15vh ;
+
+@media only screen and (min-width: 800px) {
+    .contact {
+        height: 15vh;
     }
-    
-    .content-container{
+
+    .content-container {
         flex-direction: row;
         height: 15vh;
     }
 
-    .content-container p{
+    .content-container p {
         font-size: 1.5em;
     }
 
-    .design-footer{
+    .design-footer {
         display: block;
         /* position: absolute; */
         width: 5vw;
     }
-    .social{
+
+    .social {
         display: none;
+    }
+
+    .mail-box {
+        padding: 0.3em 2em;
     }
 }
