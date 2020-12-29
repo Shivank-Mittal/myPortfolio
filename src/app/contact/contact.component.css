@@ -36,6 +36,7 @@ margin: auto;
 .mail-box p{
     margin: auto;
     text-align: center;
+    cursor: pointer;
 }
 .social {
     display: flex;

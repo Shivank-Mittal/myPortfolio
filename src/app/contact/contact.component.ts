@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-contact',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
+  constructor(private snackBar: MatSnackBar) { }
 
   ngOnInit() {
 
@@ -35,6 +36,27 @@ export class ContactComponent implements OnInit {
       default:
         break;
     }
+  }
+
+  copyToClipboard() {
+    try {
+      document.addEventListener('copy', (e: ClipboardEvent) => {
+        e.clipboardData.setData('text/plain', ("mittal.shivank@gmail.com"));
+        e.preventDefault();
+        document.removeEventListener('copy', null);
+      });
+      document.execCommand('copy');
+      this.openSnackBar("Email ID is copied to your clipboard");
+    }
+    catch (exception) {
+      this.openSnackBar("Please click again");
+    }
+
+
+  }
+
+  openSnackBar(message) {
+    this.snackBar.open(message, "Close", { duration: 5000 });
   }
 
 }
