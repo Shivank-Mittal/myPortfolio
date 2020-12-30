@@ -6,7 +6,7 @@
     border: 2px #FF46CB solid;
     border-radius: 20px;
     margin-bottom: 1em ;
-    text-align: justify;
+    text-align: center;
 
 }
 
@@ -17,12 +17,22 @@
     text-align: center;
     color: black ;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .skill-des{
-    font-size: 0.9em;
+    font-size: 1.1em;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.skill-subtitle{
+    margin-top: 1em;
+    text-align: center;
+    color: #5D00FF ;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
 
 .one img{
     width: 120px;
