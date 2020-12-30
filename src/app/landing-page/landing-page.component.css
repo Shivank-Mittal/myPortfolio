@@ -14,9 +14,18 @@
 .hero .content {
     font-weight: bold;
 }
+.hero h1 {
+    font-family: Arial Rounded MT;
+    font-size: 1.7em;
+}
+.hero h3{
+    text-align: center;
+}
 
 .hero .content p {
+    /* margin-top: -1em; */
     color: #FF46CB;
+    font-size: 0.8em;
 }
 
 .hero-design {
@@ -29,19 +38,30 @@
 }
 
 .scroll {
-    width: 25px;
-    margin-top: 2em;
+    width: 20px;
+    margin-top: 1em;
 }
 
 .downloadResume {
-    width: 20px;
+    width: 17px;
     margin-left: .5em;
 
+}
+.download-hover{
+    display: none;
+}
+
+.downloadResume:hover .download-hover{
+    display: block;
 }
 
 
 
-@media only screeen and (min-width : 800px) {}
+@media only screeen and (min-width : 800px) {
+    .hero h3{
+        text-align: center;
+    }
+}
 
 @media only screen and (min-width: 1050px) {
     .landing-page {
@@ -71,10 +91,17 @@
         font-size: 2.2em;
         line-height: 1em;
     }
+    .hero h3{
+        text-align: left;
+        font-size: 1.2em;
+    }
 
     .hero .content {
         padding: 6em 1em 6em 8em;
         text-align: left;
+    }
+    .hero .content p {
+        font-size: 1em;
     }
 
     .hero-design {
@@ -98,7 +125,7 @@
         margin-bottom: 1em;
         cursor: pointer;
     }
-
+    
 }
 
 @media only screen and (min-width: 1250px) {
@@ -123,6 +150,7 @@
         padding: 8em 5em 6em 12em;
         text-align: left;
     }
+    
 
     .social {
         display: block;

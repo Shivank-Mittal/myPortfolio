@@ -20,6 +20,7 @@ export class WorkComponent implements OnInit {
       y: 50,
       opacity: 0,
       duration: 1.2,
+      stagger: 0.5
     })
   }
 
