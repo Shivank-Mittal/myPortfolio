@@ -14,6 +14,9 @@ export class LandingPageComponent implements OnInit {
 
   menu
 
+  downloadButton = false;
+
+
   constructor() { }
 
   ngOnInit(): void {
@@ -45,6 +48,10 @@ export class LandingPageComponent implements OnInit {
     gsap.from(".squarAnim ", { stagger: .1, scale: 0, duration: 2, ease: Back.easeOut.config(1.7), delay: 1 });
     t1.from(" .social-icons", { stagger: .1, scale: 0, duration: 2, ease: Back.easeOut.config(1.7) }, "-=2");
 
+  }
+
+  onDownloadButtonClick() {
+    this.downloadButton = true;
   }
 
   onpenSocialPage(page) {
