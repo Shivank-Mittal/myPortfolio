@@ -19,7 +19,7 @@
     font-size: 1.7em;
 }
 .hero h3{
-    text-align: center;
+    text-align: justify;
 }
 
 .hero .content p {
@@ -62,7 +62,8 @@
 
 @media only screeen and (min-width : 800px) {
     .hero h3{
-        text-align: center;
+        text-align: left;
+        font-size: 1.2em;
     }
 }
 

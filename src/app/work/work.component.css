@@ -17,25 +17,22 @@
     text-align: center;
     color: black ;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 .skill-des{
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.skill-subtitle{
+.skill-subtitle img{
     margin-top: 1em;
-    text-align: center;
-    color: #5D00FF ;
-    font-weight: bold;
-    font-size: 1.5em;
+    width: 2em;
 }
 
 
 .one img{
-    width: 120px;
+    width: 100px;
     display: grid;
     place-content: centre;
     margin: 0 auto;
@@ -45,14 +42,13 @@
     width: 120px;
     display: grid;
     place-content: centre;
-    margin: 0 auto;
-    
+    margin: 0 auto 2em auto;
 }
 .three img{
-    width: 50px;
+    width: 30px;
     display: grid;
     place-content: centre;
-    margin: 0 auto;
+    margin: 0 auto ;
     
 }
 

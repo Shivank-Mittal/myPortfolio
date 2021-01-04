@@ -51,7 +51,7 @@ export class LandingPageComponent implements OnInit {
   }
 
   onDownloadButtonClick() {
-    this.downloadButton = true;
+    this.downloadButton = !this.downloadButton;
   }
 
   onpenSocialPage(page) {
